@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="./img/Asset 1@3x 1 (1).png" alt="logo" />
+      </div>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu">
+        <a id="alt" href="#">БАНК</a>
+        <a href="#">БИЗНЕС</a>
+        <a href="#">ИНВЕСТИЦИИ</a>
+        <a href="#">СТРАХОВАНИЕ</a>
+        <a href="#">МОБАЙЛ</a>
+        <a href="#">ПУТЕШЕСТВИЯ</a>
+        <a href="#">РАЗВЛЕЧЕНИЯ</a>
+      </nav>
+      <button class="login-btn">ВОЙТИ</button>
+    </header>
+
+    <main class="converter-container">
+      <h1>Конвертер валют онлайн</h1>
+      <div class="converter">
+        <div class="block">
+          <p class="label">У меня есть</p>
+          <div class="tabs">
+            <button class="tab active">RUB</button>
+            <button class="tab">USD</button>
+            <button class="tab">EUR</button>
+            <button class="tab">GBP</button>
+          </div>
+          <div class="amount-box">
+            <input type="text" class="amount-input" value="5000" />
+            <div class="rate">1 RUB = 0.01202 USD</div>
+          </div>
+        </div>
+
+        <div class="block">
+          <p class="label">Хочу приобрести</p>
+          <div class="tabs">
+            <button class="tab">RUB</button>
+            <button class="tab active">USD</button>
+            <button class="tab">EUR</button>
+            <button class="tab">GBP</button>
+          </div>
+          <div class="amount-box">
+            <input type="text" class="amount-input" value="67.6685" />
+            <div class="rate">1 USD = 83.19782 RUB</div>
+          </div>
+        </div>
+      </div>
+      <div id="network-status">No internet connection!</div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
